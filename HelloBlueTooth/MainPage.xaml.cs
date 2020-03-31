@@ -29,7 +29,8 @@ namespace HelloBlueTooth
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-
+            lbDevices.Items.Add(DateTime.Now.ToString("yy MMM dd HH:mm:ss.fff (ddd)"));
+            lbDevices.SelectedIndex = lbDevices.Items.Count-1;
         }
     }
 }
